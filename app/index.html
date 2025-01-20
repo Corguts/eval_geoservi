@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="https://openlayers.org/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deals Agriculture</title>
+  </head>
+  <body>
+    <!-- On créer ici la div conteneur qui vas accueillir tous les elements de la page -->
+    <div id="container" > 
+        <!-- Onglet titre de la carte  -->
+      <div id="titre" class="theme-color">
+        <h2>Agriculture deals in the Land Matrix since 2000</h2>
+      </div>
+
+      <!-- On import ici la carte  -->
+      <div id="map"></div>
+
+      <!-- Menue pour ajouter et afficher les differents couches -->
+      <div id="layers" class="menu theme-color">
+
+        <div id="contries-deals" class="couche">
+          <!-- Le checkbox pour country -->
+          <input type="checkbox" id="checkbox-countries" name="checkbox-countries" checked />
+          <label for="checkbox-countries">Contries with deals</label>
+        </div>
+
+        <div class="couche">
+          <!-- Le ckeckbox pour deals  -->
+          <input type="radio" id="checkbox-deals" name="checkbox-group" checked />
+          <label for="checkbox-deals">Deals </label>
+        </div>
+
+        <!-- Le ckeckbox pour centroide  -->
+        <div class="couche">
+          <input type="radio" id="checkbox-centroide" name="checkbox-group" />
+          <label for="checkbox-centroide">Deals by contries </label>
+        </div>
+      </div>
+
+      <!-- La div des filter qui ce masque quand on coche le checkbox deals by contries -->
+      <div id="production" class="menu theme-color">
+        <h3>Production</h3>
+
+        <div class="filtre">
+          <input type="radio" id="button-tous" name="produce" value="tous" checked />
+          <label for="tous">Tous</label>
+        </div>
+
+        <div class="filtre">
+          <input type="radio" id="button-oil_palm" name="produce" value="oil_palm" />
+          <label for="oil_palm">Oil Palm</label>
+        </div>
+
+        <div class="filtre">
+          <input type="radio" id="button-soya_beans" name="produce" value="soya_beans" />
+          <label for="soya_beans">Soya Beans</label>
+        </div>
+    
+        <div class="filtre">
+          <input type="radio" id="button-sugar_cane" name="produce" value="sugar_cane" />
+          <label for="sugar_cane">Sugar Cane</label>
+        </div>
+      </div>
+
+      <!-- La div qui contient la table d'info html -->
+      <div id="attributes" class="tableaux">
+        <div class="table">
+          <table>
+            <!-- tr pour créer une ligne : tr = table row  -->
+            <tr> 
+              <th>Deal ID</th>
+              <th>Creation date</th>
+              <th>Country</th>
+              <th>Crops</th>
+            </tr>
+            <tr>
+              <!-- On crée trois colonnes vides avec td -->
+              <td id="table-deal-id">…</td>
+              <td id="table-creation-date">…</td>
+              <td id="table-country">…</td>
+              <td id="table-crops">…</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <!-- L'onglet avec éléments de la legende -->
+      <div id="legend" class="theme-seconde-color">
+        <div id="legend-raster">
+          <div>
+            <p> <img id = "legend-image1" src="" alt=""> Deals</p>
+          </div>
+          <div> 
+              <p> <img id = "legend-image2"  alt=""> Deals by contries</p>
+          </div>
+        </div>
+
+        <div id="legend-vecteur">
+          <h3>Number of deals by country:</h3>
+          <div class="circle-container">
+            <div class="circle" style="width: calc(sqrt(600) * 3px); height: calc(sqrt(600) * 3px);">
+              <span class="label">600</span>
+            </div>
+            <div class="circle" style="width: calc(sqrt(200) * 3px); height: calc(sqrt(200) * 3px);">
+              <span class="label">200</span>
+            </div>
+            <div class="circle" style="width: calc(sqrt(50) * 3px); height: calc(sqrt(50) * 3px);">
+              <span class="label">50</span>
+            </div>
+            <div class="circle" style="width: calc(sqrt(10) * 3px); height: calc(sqrt(10) * 3px);">
+              <span class="label">10</span>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+      <!-- Auteurs de la carte  -->
+      <div id="auteur">
+        <img src="geonum.jpg" alt="" >
+        <p> OpenLayers Map / GéoNum 2025</p>
+        <p>By : </p>
+        <p>Quesnel Corentin </p>
+        <p>RIDJALI hassani</p>
+        <p>Source:</p>
+        <p>land_matrix_mines ; gpkg_land_matrix_mines</p>
+      </div>
+
+    </div>
+    
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

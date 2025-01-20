@@ -1,0 +1,22 @@
+<dataStore>
+  <id>DataStoreInfoImpl-2fd6a7c:19436c57a06:-7fef</id>
+  <name>land_matrix_mines</name>
+  <description>Transaction minière en 2024</description>
+  <type>GeoPackage</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl--50af4df1:1936d204d30:-7ffc</id>
+  </workspace>
+  <connectionParameters>
+    <entry key="fetch size">1000</entry>
+    <entry key="Expose primary keys">false</entry>
+    <entry key="Batch insert size">1</entry>
+    <entry key="database">file:data/geopackage/land_matrix_mines.gpkg</entry>
+    <entry key="read_only">false</entry>
+    <entry key="dbtype">geopkg</entry>
+    <entry key="namespace">land_matrix</entry>
+  </connectionParameters>
+  <__default>false</__default>
+  <dateCreated>2025-01-05 14:33:49.125 UTC</dateCreated>
+  <disableOnConnFailure>false</disableOnConnFailure>
+</dataStore>

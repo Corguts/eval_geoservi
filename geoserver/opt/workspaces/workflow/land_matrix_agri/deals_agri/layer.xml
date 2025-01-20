@@ -1,0 +1,17 @@
+<layer>
+  <name>deals_agri</name>
+  <id>LayerInfoImpl-2fd6a7c:19436c57a06:-7fe4</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-437d491b:1944cbff771:-7ff4</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-2fd6a7c:19436c57a06:-7fe5</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2025-01-05 14:38:54.905 UTC</dateCreated>
+  <dateModified>2025-01-09 21:52:03.322 UTC</dateModified>
+</layer>
